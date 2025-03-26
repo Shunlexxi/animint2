@@ -1,0 +1,23 @@
+Exercises:
+
+What are the three main advantages of ggplot2 relative to previous plotting systems such as grid and lattice?
+What is the purpose of multi-layer graphics?
+What are the two different reasons for creating multi-panel graphics? Which of these two types is useful with interactivity?
+Let us define “A < B” to mean that “one B can contain several A.” Which of the following statements is true?
+
+ggplot < panel
+panel < ggplot
+ggplot < animint
+animint < ggplot
+layer < panel
+panel < layer
+layer < ggplot
+ggplot < layer
+In the viz.aligned facets, why is it important to use the scales="free" argument?
+In viz.aligned we showed a ggplot with a scatterplot panel on the left and a time series panel on the right. Make another version of the data visualization with the time series panel on the left and the scatterplot panel on the right.
+In viz.aligned the scatterplot displays fertility rate and life expectancy, but the time series displays only fertility rate. Make another version of the data visualization that shows both time series. Hint: use both horizontal and vertical panels in facet_grid.
+Use aes(size=population) in the scatterplot to show the population of each country. Hint: scale_size_animint(pixel.range=c(5, 10) means that circles with a radius of 5/10 pixels should be used represent the minimum/maximum population.
+Create a multi-panel data visualization that shows each year of the WorldBank data set in a separate panel. What are the limitations of using static graphics to visualize these data?
+Create viz.aligned using a plotting system that is not based on the grammar of graphics. For example, you can use functions from the graphics package in R (plot, points, lines, etc), or matplotlib in Python. What are some advantages of ggplot2 and animint?
+
+Next, Chapter 3 explains the showSelected keyword, which indicates a variable to use for subsetting the data before plotting.
