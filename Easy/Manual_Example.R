@@ -103,14 +103,14 @@ two.layers <- scatter +
 (viz.two.layers <- animint(two.layers))
 
 # dependent packages
-install.packages("chromote")
-install.packages("magick")
-install.packages("httr2")
+# install.packages("chromote")
+# install.packages("magick")
+# install.packages("httr2")
 
 # publishing scatter 3
 viz3 <- animint(
   scatter3,
-  title = "Visualizing Rentals by Windspeed",
+  title = "Visualizing GDP per Capital by Population and Lending",
   source = "https://rcdata.nau.edu/genomic-ml/animint2-manual/Ch02-ggplot2.html"
 )
 viz3
