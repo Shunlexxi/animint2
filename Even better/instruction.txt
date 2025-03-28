@@ -1,0 +1,5 @@
+Publish on GitHub Pages
+GitHub Pages is a service that provides static web site hosting, and can be used to publish animints. To publish an animint on GitHub Pages, you need a GitHub account, and the packages gert (for running git from R), gh (for using the GitHub API from R), and gitcreds (for interacting with the git credential store, easy authentication when pushing to GitHub). First, install those packages. If you don’t have a GitHub account, you can sign up for free. Then make sure to tell R what name/email to use for git commits:
+
+gert::git_config_global_set("user.name", "<your_full_name>")
+gert::git_config_global_set("user.email", "<your_email>")

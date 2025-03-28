@@ -1,0 +1,777 @@
+{
+ "geoms": {
+ "geom1_tallrect_ts": {
+ "geom": "tallrect",
+"classed": "geom1_tallrect_ts",
+"aes": {
+ "key": "key",
+"xmin": "min",
+"xmax": "max",
+"clickSelects.variable": "var",
+"clickSelects.value": "click.val",
+"showSelected.variable": "var",
+"showSelected.value": "show.val" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.5,
+"showSelected": "show.val",
+"clickSelects": "click.val",
+"help_showSelected": "year",
+"help_clickSelects": "year" 
+},
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"key": "character",
+"clickSelects.variable": "character",
+"clickSelects.value": "numeric",
+"showSelected.variable": "character",
+"showSelected.value": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected.variable",
+"showSelected.value" 
+],
+"subset_order": [
+ "showSelected.variable" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_text_ts": {
+ "geom": "text",
+"classed": "geom2_text_ts",
+"aes": {
+ "x": "year",
+"y": "life.expectancy",
+"label": "country",
+"clickSelects": "country",
+"showSelected1": "country" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "country",
+"clickSelects": "country",
+"help_showSelected": "country",
+"help_clickSelects": "country",
+"anchor": "end" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_line_ts": {
+ "geom": "line",
+"classed": "geom3_line_ts",
+"aes": {
+ "x": "year",
+"y": "life.expectancy",
+"group": "country",
+"colour": "region",
+"clickSelects": "country",
+"showSelected1": "region" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"alpha":     0.55,
+"clickSelects": "country",
+"showSelected": "region",
+"help_clickSelects": "country",
+"help_showSelected": "region" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "character",
+"clickSelects": "character",
+"showSelected1": "factor",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_scatter": {
+ "geom": "point",
+"classed": "geom4_point_scatter",
+"aes": {
+ "x": "fertility.rate",
+"y": "life.expectancy",
+"key": "country",
+"colour": "region",
+"size": "population",
+"clickSelects": "country",
+"showSelected1": "year",
+"showSelected2": "region" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"chunk_vars": [ ],
+"showSelected": [ "year", "region" ],
+"clickSelects": "country",
+"help_showSelected": [ "year", "region" ],
+"help_clickSelects": "country" 
+},
+"types": {
+ "size": "numeric",
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "character",
+"clickSelects": "character",
+"showSelected1": "numeric",
+"showSelected2": "factor",
+"PANEL": "integer",
+"fill": "rgb",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_text_scatter": {
+ "geom": "text",
+"classed": "geom5_text_scatter",
+"aes": {
+ "x": "fertility.rate",
+"y": "life.expectancy",
+"key": "country",
+"label": "country",
+"showSelected1": "country",
+"showSelected2": "year" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": [ "country", "year" ],
+"chunk_vars": [ ],
+"help_showSelected": [ "country", "year" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"key": "character",
+"label": "character",
+"showSelected1": "character",
+"showSelected2": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected2",
+"showSelected1" 
+],
+"subset_order": [
+ "showSelected2",
+"showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_text_scatter": {
+ "geom": "text",
+"classed": "geom6_text_scatter",
+"aes": {
+ "x": "5",
+"y": "80",
+"key": "1",
+"label": "paste(\"year =\", year)",
+"showSelected1": "year" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "year",
+"help_showSelected": "year" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"key": "numeric",
+"label": "character",
+"showSelected1": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"time": {
+ "variable": "year",
+"ms":     3000,
+"sequence": [ "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012" ] 
+},
+"duration": {
+ "year":     1000 
+},
+"selectors": {
+ "region": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "South Asia", "Europe & Central Asia (all income levels)", "Middle East & North Africa (all income levels)", "East Asia & Pacific (all income levels)", "Sub-Saharan Africa (all income levels)", "Latin America & Caribbean (all income levels)", "North America" ],
+"levels": [ "South Asia", "Europe & Central Asia (all income levels)", "Middle East & North Africa (all income levels)", "East Asia & Pacific (all income levels)", "Sub-Saharan Africa (all income levels)", "Latin America & Caribbean (all income levels)", "North America" ],
+"update": [
+ "geom3_line_ts",
+"geom4_point_scatter" 
+] 
+},
+"year": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "1970",
+"levels": [ "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012" ],
+"update": [
+ "geom1_tallrect_ts",
+"geom4_point_scatter",
+"geom5_text_scatter",
+"geom6_text_scatter" 
+],
+"duration":     1000 
+},
+"country": {
+ "is.variable.value": false,
+"type": "multiple",
+"clickSelects": true,
+"showSelected": true,
+"selected": [ "Canada", "Japan" ],
+"levels": [ "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and Barbuda", "Albania", "Armenia", "Angola", "Argentina", "American Samoa", "Austria", "Australia", "Aruba", "Azerbaijan", "Bosnia and Herzegovina", "Barbados", "Bangladesh", "Belgium", "Burkina Faso", "Bulgaria", "Bahrain", "Burundi", "Benin", "Bermuda", "Brunei Darussalam", "Bolivia", "Brazil", "Bahamas, The", "Bhutan", "Botswana", "Belarus", "Belize", "Canada", "Congo, Dem. Rep.", "Central African Republic", "Congo, Rep.", "Switzerland", "Cote d'Ivoire", "Chile", "Cameroon", "China", "Colombia", "Costa Rica", "Cuba", "Cape Verde", "Curacao", "Cyprus", "Czech Republic", "Germany", "Djibouti", "Denmark", "Dominica", "Dominican Republic", "Algeria", "Ecuador", "Estonia", "Egypt, Arab Rep.", "Eritrea", "Spain", "Ethiopia", "Finland", "Fiji", "Micronesia, Fed. Sts.", "Faeroe Islands", "France", "Gabon", "United Kingdom", "Grenada", "Georgia", "Ghana", "Greenland", "Gambia, The", "Guinea", "Equatorial Guinea", "Greece", "Guatemala", "Guam", "Guinea-Bissau", "Guyana", "Hong Kong SAR, China", "Honduras", "Croatia", "Haiti", "Hungary", "Indonesia", "Ireland", "Israel", "Isle of Man", "India", "Iraq", "Iran, Islamic Rep.", "Iceland", "Italy", "Channel Islands", "Jamaica", "Jordan", "Japan", "Kenya", "Kyrgyz Republic", "Cambodia", "Kiribati", "Comoros", "St. Kitts and Nevis", "Korea, Dem. Rep.", "Korea, Rep.", "Kosovo", "Kuwait", "Cayman Islands", "Kazakhstan", "Lao PDR", "Lebanon", "St. Lucia", "Liechtenstein", "Sri Lanka", "Liberia", "Lesotho", "Lithuania", "Luxembourg", "Latvia", "Libya", "Morocco", "Monaco", "Moldova", "Montenegro", "St. Martin (French part)", "Madagascar", "Marshall Islands", "Macedonia, FYR", "Mali", "Myanmar", "Mongolia", "Macao SAR, China", "Northern Mariana Islands", "Mauritania", "Malta", "Mauritius", "Maldives", "Malawi", "Mexico", "Malaysia", "Mozambique", "Namibia", "New Caledonia", "Niger", "Nigeria", "Nicaragua", "Netherlands", "Norway", "Nepal", "New Zealand", "Oman", "Panama", "Peru", "French Polynesia", "Papua New Guinea", "Philippines", "Pakistan", "Poland", "Puerto Rico", "West Bank and Gaza", "Portugal", "Palau", "Paraguay", "Qatar", "Romania", "Serbia", "Russian Federation", "Rwanda", "Saudi Arabia", "Solomon Islands", "Seychelles", "Sudan", "Sweden", "Singapore", "Slovenia", "Slovak Republic", "Sierra Leone", "San Marino", "Senegal", "Somalia", "Suriname", "South Sudan", "Sao Tome and Principe", "El Salvador", "Sint Maarten (Dutch part)", "Syrian Arab Republic", "Swaziland", "Turks and Caicos Islands", "Chad", "Togo", "Thailand", "Tajikistan", "Timor-Leste", "Turkmenistan", "Tunisia", "Tonga", "Turkey", "Trinidad and Tobago", "Tuvalu", "Tanzania", "Ukraine", "Uganda", "United States", "Uruguay", "Uzbekistan", "St. Vincent and the Grenadines", "Venezuela, RB", "Virgin Islands (U.S.)", "Vietnam", "Vanuatu", "Samoa", "Yemen, Rep.", "South Africa", "Zambia", "Zimbabwe" ],
+"update": [
+ "geom2_text_ts",
+"geom3_line_ts",
+"geom4_point_scatter",
+"geom5_text_scatter" 
+] 
+} 
+},
+"plots": {
+ "ts": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "region": {
+ "guide": "legend",
+"geoms": "path",
+"title": "region",
+"class": "region",
+"selector": "region",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#F8766D",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "East Asia & Pacific (all income levels)" 
+},
+{
+ "pathcolour": "#C49A00",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "Europe & Central Asia (all income levels)" 
+},
+{
+ "pathcolour": "#53B400",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "Latin America & Caribbean (all income levels)" 
+},
+{
+ "pathcolour": "#00C094",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "Middle East & North Africa (all income levels)" 
+},
+{
+ "pathcolour": "#00B6EB",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "North America" 
+},
+{
+ "pathcolour": "#A58AFF",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "South Asia" 
+},
+{
+ "pathcolour": "#FB61D7",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":     0.55,
+"label": "Sub-Saharan Africa (all income levels)" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1960,
+    1980,
+    2000 
+] 
+],
+"y": [
+ [
+       40,
+      60,
+      80 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1950,
+    1960,
+    1970,
+    1980,
+    1990,
+    2000,
+    2010 
+] 
+],
+"y": [
+ [
+       30,
+      40,
+      50,
+      60,
+      70,
+      80 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     1960,
+    1980,
+    2000 
+],
+"xlab": [
+ "1960",
+"1980",
+"2000" 
+],
+"xrange": [ 1946.875, 2015.625 ],
+"xline": true,
+"xticks": true,
+"y": [
+       40,
+      60,
+      80 
+],
+"ylab": [
+ "40",
+"60",
+"80" 
+],
+"yrange": [ 23.90147, 88.08065 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "year",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "life.expectancy",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1960",
+"1980",
+"2000" 
+],
+"ylabs": [
+ "40",
+"60",
+"80" 
+],
+"title_size": "13.2pt",
+"options": {
+ "width":      500,
+"height":      400 
+},
+"geoms": [
+ "geom1_tallrect_ts",
+"geom2_text_ts",
+"geom3_line_ts" 
+] 
+},
+"scatter": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "region": {
+ "guide": "legend",
+"geoms": "point",
+"title": "region",
+"class": "region",
+"selector": "region",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointcolour": "#F8766D",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "East Asia & Pacific (all income levels)" 
+},
+{
+ "pointcolour": "#C49A00",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Europe & Central Asia (all income levels)" 
+},
+{
+ "pointcolour": "#53B400",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Latin America & Caribbean (all income levels)" 
+},
+{
+ "pointcolour": "#00C094",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Middle East & North Africa (all income levels)" 
+},
+{
+ "pointcolour": "#00B6EB",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "North America" 
+},
+{
+ "pointcolour": "#A58AFF",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "South Asia" 
+},
+{
+ "pointcolour": "#FB61D7",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Sub-Saharan Africa (all income levels)" 
+} 
+] 
+},
+"population": {
+ "guide": "legend",
+"geoms": "point",
+"title": "population",
+"class": "population",
+"selector": null,
+"is_discrete": false,
+"legend_type": "size",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointsize": 2.037045,
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1e+04" 
+},
+{
+ "pointsize":  2.15153,
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1e+05" 
+},
+{
+ "pointsize": 2.488724,
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1e+06" 
+},
+{
+ "pointsize": 3.548466,
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1e+07" 
+},
+{
+ "pointsize": 6.897622,
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1e+08" 
+},
+{
+ "pointsize": 17.48794,
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1e+09" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      2.5,
+       5,
+     7.5 
+] 
+],
+"y": [
+ [
+       40,
+      60,
+      80 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1.25,
+     2.5,
+    3.75,
+       5,
+    6.25,
+     7.5,
+    8.75 
+] 
+],
+"y": [
+ [
+       30,
+      40,
+      50,
+      60,
+      70,
+      80 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+      2.5,
+       5,
+     7.5 
+],
+"xlab": [
+ "2.5",
+"5.0",
+"7.5" 
+],
+"xrange": [   0.4303,   9.6417 ],
+"xline": true,
+"xticks": true,
+"y": [
+       40,
+      60,
+      80 
+],
+"ylab": [
+ "40",
+"60",
+"80" 
+],
+"yrange": [ 23.90147, 88.08065 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "fertility.rate",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "life.expectancy",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "2.5",
+"5.0",
+"7.5" 
+],
+"ylabs": [
+ "40",
+"60",
+"80" 
+],
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"geoms": [
+ "geom4_point_scatter",
+"geom5_text_scatter",
+"geom6_text_scatter" 
+] 
+} 
+},
+"title": "Linked scatterplot and time series" 
+}
