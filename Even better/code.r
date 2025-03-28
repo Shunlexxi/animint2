@@ -28,14 +28,18 @@ scatter
 # interactive viz with animint
 animint(scatter)
 
-# Publishing plot
-animint2pages(
-  plot.list,
-  github_repo,
-  owner = NULL,
-  commit_message = "Commit from animint2pages",
-  private = FALSE,
-  required_opts = c("title", "source"),
-  chromote_sleep_seconds = NULL,
-  ...
+# animint plot saved in object Viz
+viz <- animint(
+  scatter,
+  title = "Visualizing Rentals by Windspeed",
+  source = "https://learn.microsoft.com/?WT.mc_id=%3Fwt.mc_id%3Dstudentamb_255353"
 )
+viz
+
+# publish to GH pages
+    # dependent packages
+    # install.packages("chromote")
+    # install.packages("magick")
+    # httr2 ...
+
+animint2pages(viz, "animint2")
